@@ -1,0 +1,112 @@
+# robots.txt for POWU — Pay Offline with UPI
+# https://github.com/pay-offline-with-upi-powu/pay-offline-with-upi-powu
+#
+# Allows all standard search engine crawlers AND AI/LLM crawlers
+# (for AI search, chat assistants, and training indexing).
+
+# ---------------------------------------------------
+# Default: allow everything for every crawler
+# ---------------------------------------------------
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------
+# AI Search / Answer Engines
+# ---------------------------------------------------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# ---------------------------------------------------
+# AI / LLM Training & Assistant Crawlers
+# ---------------------------------------------------
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Omgili
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Ai2Bot
+Allow: /
+
+# ---------------------------------------------------
+# Sitemap (update with your actual published site URL)
+# ---------------------------------------------------
+Sitemap: https://pay-offline-with-upi-powu.github.io/pay-offline-with-upi-powu/sitemap.xml
