@@ -92,7 +92,7 @@
     display:flex; align-items:center; justify-content:space-between; gap:16px;
   }
   .brand{display:flex; align-items:center; gap:10px; font-weight:800; font-size:17px;}
-  .brand img{width:30px; height:30px; border-radius:22%;}
+  .brand img{width:30px; height:30px; border-radius:50%; object-fit:cover;}
   .navlinks{display:flex; align-items:center; gap:28px; font-size:14px; color:var(--text-dim);}
   .navlinks a{text-decoration:none; position:relative; padding:4px 0;}
   .navlinks a:hover{color:var(--text);}
@@ -235,13 +235,13 @@
   .shots-track{display:flex; gap:28px; width:max-content; animation:scroll-x 40s linear infinite;}
   .shots-outer:hover .shots-track{animation-play-state:paused;}
   .shot-frame{
-    width:min(78vw,620px); border-radius:22px; border:8px solid var(--bg-soft);
+    width:min(38vw,310px); border-radius:22px; border:8px solid var(--bg-soft);
     box-shadow:0 30px 60px -22px rgba(0,0,0,.45); overflow:hidden; flex:none;
     background:var(--bg-soft); display:flex; align-items:center; justify-content:center;
   }
   .shot-frame img{width:100%; height:auto; object-fit:contain;}
   @keyframes scroll-x{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-  @media (max-width:640px){ .shot-frame{width:92vw;} }
+  @media (max-width:640px){ .shot-frame{width:46vw;} }
 
   /* ---------- Trust / data safety ---------- */
   .trust{display:flex; flex-wrap:wrap; gap:14px;}
