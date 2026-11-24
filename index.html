@@ -57,6 +57,7 @@
       --code-bg:#1B1E29;
     }
   }
+
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth; scroll-padding-top:72px;}
   body{
@@ -192,7 +193,7 @@
   }
   .size-card .num{font-family:var(--mono); font-size:30px; font-weight:700; color:var(--accent);}
 
-  /* ---------- Features (USSD menu style) ----------- */
+  /* ---------- Features (USSD menu style) ---------- */
   .menu-wrap{
     display:grid; grid-template-columns:0.82fr 1.18fr; gap:40px; align-items:start;
   }
@@ -236,10 +237,11 @@
   .shot-frame{
     width:min(78vw,620px); border-radius:22px; border:8px solid var(--bg-soft);
     box-shadow:0 30px 60px -22px rgba(0,0,0,.45); overflow:hidden; flex:none;
+    background:var(--bg-soft); display:flex; align-items:center; justify-content:center;
   }
-  .shot-frame img{width:100%; aspect-ratio:526/296; object-fit:cover; object-position:top;}
+  .shot-frame img{width:100%; height:auto; object-fit:contain;}
   @keyframes scroll-x{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-  @media (max-width:640px){ .shot-frame{width:88vw;} }
+  @media (max-width:640px){ .shot-frame{width:92vw;} }
 
   /* ---------- Trust / data safety ---------- */
   .trust{display:flex; flex-wrap:wrap; gap:14px;}
