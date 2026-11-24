@@ -231,15 +231,16 @@
   }
 
   /* ---------- Screenshots marquee ---------- */
-  .shots-outer{overflow:hidden; mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
-  .shots-track{display:flex; gap:18px; width:max-content; animation:scroll-x 32s linear infinite;}
+  .shots-outer{overflow:hidden; mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);}
+  .shots-track{display:flex; gap:28px; width:max-content; animation:scroll-x 40s linear infinite;}
   .shots-outer:hover .shots-track{animation-play-state:paused;}
   .shot-frame{
-    width:168px; border-radius:20px; border:6px solid var(--bg-soft);
-    box-shadow:0 20px 40px -18px rgba(0,0,0,.4); overflow:hidden; flex:none;
+    width:min(78vw,620px); border-radius:22px; border:8px solid var(--bg-soft);
+    box-shadow:0 30px 60px -22px rgba(0,0,0,.45); overflow:hidden; flex:none;
   }
-  .shot-frame img{aspect-ratio:526/296; object-fit:cover;}
+  .shot-frame img{width:100%; aspect-ratio:526/296; object-fit:cover; object-position:top;}
   @keyframes scroll-x{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @media (max-width:640px){ .shot-frame{width:88vw;} }
 
   /* ---------- Trust / data safety ---------- */
   .trust{display:flex; flex-wrap:wrap; gap:14px;}
@@ -399,7 +400,7 @@
       <p>A quick look at Powu in action.</p>
     </div>
   </section>
-  <div class="shots-outer">
+  <div class="shots-outer" style="padding:8px 0 24px;">
     <div class="shots-track" id="shotsTrack">
       <div class="shot-frame"><img src="https://play-lh.googleusercontent.com/1XKOGFZEopWKcLKknRIbhbb7DudFFtP15FODlBV1ZZx-fip_rF_54MgyHA7Q8-OdawrU8A29V1U8S93-CsCBMQ=w526-h296" alt="POWU screenshot"></div>
       <div class="shot-frame"><img src="https://play-lh.googleusercontent.com/x3cOA9zKbtc_bMFpQTmgiC_FRJG5KI59syIGMrV65G-S1WlIha54S72xZQEMBAgMYtC-ktD78vphI965ynrInQ=w526-h296" alt="POWU screenshot"></div>
